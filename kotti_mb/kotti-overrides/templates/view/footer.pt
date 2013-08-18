@@ -1,0 +1,14 @@
+<footer class="app-footer">
+    <div class="app-footer-content container">
+        <div class="row">
+            <div class="col-xm-12 col-lg-6">
+                <p>&copy; Someone 2013</p>
+            </div>
+            <div class="col-xm-12 col-lg-6">
+                <p class="text-right">
+                    Some additional information added here
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -6263,7 +6263,7 @@ textarea.controls > input {
 .navbar-app {
   margin-bottom: 0;
 }
-body > footer {
+.app-footer {
   margin-top: 22px;
   padding: 22px 0;
   border-top: 1px solid #eeeeee;

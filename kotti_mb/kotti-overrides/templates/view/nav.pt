@@ -11,7 +11,7 @@
         </button>
         <a class="navbar-brand" href="${request.application_url}/">${api.site_title}</a>
     </div>
-      <div class="navbar-form navbar-right" tal:content="api.render_template('kotti:templates/view/search.pt')" />
+      <!--<div class="navbar-form navbar-right" tal:content="api.render_template('kotti:templates/view/search.pt')" />-->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
           <li tal:define="items [i for i in api.list_children(api.navigation_root) if i.in_navigation]"

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      metal:use-macro="api.macro('kotti:templates/view/master.pt')">
+
+  <div metal:fill-slot="content" class="content">
+
+    <h1>${api.context.title}</h1>
+    <p class="description">
+      ${api.context.description}
+    </p>
+
+    <p class="lead">
+      This is our custom front page added via includeme into the kotti view
+      configuration
+    </p>
+
+    <div tal:condition="items" class="blogentries">
+      <div tal:repeat="item items" class="blogentry" data-uri="${api.url(item)}">
+        <span class="date" tal:content="api.format_date(item.date)" />
+        <h2>
+          <a href="${api.url(item)}" title="${item.description}">
+            ${item.title}
+          </a>
+        </h2>
+        <p class="text-muted">
+          <a href="${api.url(item)}" title="${item.description}">
+            ${item.description}
+          </a>
+        </p>   
+      </div>
+    </div>
+
+  </div>
+</html>

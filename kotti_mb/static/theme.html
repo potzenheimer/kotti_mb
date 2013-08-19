@@ -17,43 +17,76 @@
 <script data-ui="development" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
 <script data-ui="development" type="text/javascript" src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script>
 <script data-ui="development" type="text/javascript" src="assets/js/less-1.4.1.min.js"></script>
+<script data-ui="development" src="assets/js/holder.js"></script>
 <script data-ui="development" src="assets/js/bootstrap.min.js"></script>
 <script data-ui="development" src="js/application.js"></script>  </head>
   <body>
   <header id="topbar">
-    <div class="navbar navbar-inverse navbar-fixed-top" id="toolbar">
-    <a class="navbar-brand" href="#">Plone Toolbar</a>
+    <div class="navbar navbar-inverse navbar-fixed-top app-toolbar" id="toolbar">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-toolbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand visible-xs" href="#">CMS Toolbar</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-toolbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Inhalte</a></li>
+          <li><a href="#">Anzeigen</a></li>
+          <li><a href="#">Bearbeiten</a></li>
+          <li><a href="#">Freigabe</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+        <p class="navbar-text pull-right">CMS Toolbar</p>
+    <ul class="nav navbar-nav pull-right">
+  <li id="plone-personal-actions" class="dropdown dropdown-userinfo">
+    <a data-toggle="dropdown" class="dropdown-toggle" href="/author/123456789">
+      <span>John Doe</span>
+      <b class="caret">
+    </b></a>
+    <ul class="dropdown-menu"><li id="plone-personal-actions-dashboard">
+        <a href="/dashboard">Persönliche Seite</a>
+      </li>
+      <li id="plone-personal-actions-preferences">
+        <a href="/preferences">Meine Einstellungen</a>
+      </li>
+      <li id="plone-personal-actions-plone_setup">
+        <a href="/controlpanel">Konfiguration</a>
+      </li>
+      <li id="plone-personal-actions-logout">
+        <a href="/logout">Abmelden</a>
+      </li>
+    </ul></li>
+</ul>    </div>
 </div>
-    <nav class="navbar">
-  <div class="container">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">Title</a>
-    <div class="nav-collapse collapse navbar-responsive-collapse">
+    <div class="container app-navbar-wrapper">
+    <nav class="navbar navbar-default app-navbar" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header pull-right">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brandname</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-      </ul>
-      <ul class="nav navbar-nav pull-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
+        <li><a href="#">Sektion A</a></li>
+        <li><a href="#">Sektion B</a></li>
+        <li><a href="#">Sektion C</a></li>
+        <li><a href="#">Metanav A</a></li>
+        <li><a href="#">Metanav B</a></li>
       </ul>
     </div><!-- /.nav-collapse -->
   </div><!-- /.container -->
 </nav><!-- /.navbar -->
+    </div>
 </header>
     <section class="container">
         <div class="content" id="content">
@@ -62,28 +95,23 @@
                All you get is this message and a barebones HTML document.
             </p>
         </div>
-        <p class="text-pullquote">Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten.</p>
-<p>Damit das Layout nun nicht nackt im Raume steht und sich klein und leer
-    vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen,
-    immer im Schatten meines großen Bruders »Lorem Ipsum«, freue ich mich jedes
-    Mal, wenn Sie ein paar Zeilen lesen.</p>
-<p class="text-callout">Denn esse est percipi - Sein ist wahrgenommen werden.</p>
-<p>Und weil Sie nun schon die Güte haben, mich ein paar weitere Sätze lang zu
-begleiten, möchte ich diese Gelegenheit nutzen, Ihnen nicht nur als Lückenfüller
-zu dienen, sondern auf etwas hinzuweisen, das es ebenso verdient wahrgenommen
-zu werden:</p>
-<p class="text-highlight">Webstandards nämlich.</p>
-<p class="text-discreet">Sehen Sie, Webstandards sind das Regelwerk,
-auf dem Webseiten aufbauen.</p>
-<p>So gibt es Regeln für HTML, CSS, JavaScript oder
-auch XML; Worte, die Sie vielleicht schon einmal von Ihrem Entwickler gehört
-haben. Diese Standards sorgen dafür, dass alle Beteiligten aus einer Webseite
-den größten Nutzen ziehen. Im Gegensatz zu früheren Webseiten müssen wir zum
-Beispiel nicht mehr zwei verschiedene Webseiten für den Internet Explorer und
-einen anderen Browser programmieren</p>    </section> <!-- /container -->
-    <footer id="site-footer">
+    </section> <!-- /container -->
+    <footer class="app-footer" id="site-footer">
       <div class="container">
-        <p>&copy; ACME Corp. 2012</p>
+        <div class="row">
+            <div class="col-xs-12 col-lg-6">
+                <p class="app-footer-copyright">
+                    &copy; ACME Corp. 2012
+                    <a class="app-footer-link" href="/impressum">
+                        Impressum</a>
+                </p>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <p class="app-footer-sm text-right">
+                    <a class="app-footer-link"><i class="icon-facebook-sign icon-2x"></i></a>
+                </p>
+            </div>
+        </div>
       </div>
     </footer>
     <script type="text/javascript">

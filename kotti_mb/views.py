@@ -1,6 +1,6 @@
 import colander
 from kotti.views.edit import AddFormView
-from kotti.views.edit import ContentSchema
+from kotti.views.edit import DocumentSchema
 from kotti.views.edit import EditFormView
 from kotti.views.util import template_api
 
@@ -10,21 +10,21 @@ from kotti import DBSession
 from kotti_blog.resources import BlogEntry
 
 from kotti_mb import _
-from kotti_mb.resources import ContentType
+from kotti_mb.resources import LandingPage
 
 
-class ContentTypeSchema(ContentSchema):
-    example_text = colander.SchemaNode(colander.String())
+class LandingPageSchema(DocumentSchema):
+    pass
 
 
-class ContentTypeAddForm(AddFormView):
-    schema_factory = ContentTypeSchema
-    add = ContentType
-    item_type = _(u"ContentType")
+class LandingPageAddForm(AddFormView):
+    schema_factory = LandingPageSchema
+    add = LandingPage
+    item_type = _(u"Landing Page")
 
 
-class ContentTypeEditForm(EditFormView):
-    schema_factory = ContentTypeSchema
+class LandingPageEditForm(EditFormView):
+    schema_factory = LandingPageSchema
 
 
 def view_content_type(context, request):
@@ -50,16 +50,16 @@ def frontpage_view(context, request):
 def includeme_edit(config):
 
     config.add_view(
-        ContentTypeEditForm,
-        context=ContentType,
+        LandingPageEditForm,
+        context=LandingPage,
         name='edit',
         permission='edit',
         renderer='kotti:templates/edit/node.pt',
     )
 
     config.add_view(
-        ContentTypeAddForm,
-        name=ContentType.type_info.add_view,
+        LandingPageAddForm,
+        name=LandingPage.type_info.add_view,
         permission='add',
         renderer='kotti:templates/edit/node.pt',
     )
@@ -69,7 +69,7 @@ def includeme_view(config):
 
     config.add_view(
         view_content_type,
-        context=ContentType,
+        context=LandingPage,
         name='view',
         permission='view',
         renderer='templates/view.pt',

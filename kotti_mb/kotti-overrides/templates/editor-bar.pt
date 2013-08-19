@@ -1,4 +1,4 @@
-<div class="navbar navbar-static-top navbar-app"
+<div class="navbar navbar-default navbar-static-top app-editbar"
      id="editor-bar"
      i18n:domain="Kotti"
      tal:define="disable_context_links disable_context_links | False">

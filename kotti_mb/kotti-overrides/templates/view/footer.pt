@@ -1,14 +1,18 @@
-<footer class="app-footer">
-    <div class="app-footer-content container">
-        <div class="row">
-            <div class="col-xm-12 col-lg-6">
-                <p>&copy; Someone 2013</p>
-            </div>
-            <div class="col-xm-12 col-lg-6">
-                <p class="text-right">
-                    Some additional information added here
-                </p>
-            </div>
+<footer class="app-footer" id="site-footer">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-lg-6">
+            <p class="app-footer-copyright">
+                &copy; Freie W&auml;hler |
+                <a class="app-footer-link" href="${request.application_url}/impressum">
+                    Impressum</a>
+            </p>
+        </div>
+        <div class="col-xs-12 col-lg-6">
+            <p class="app-footer-sm text-right">
+                <a class="app-footer-link"><i class="icon-facebook-sign icon-2x"></i></a>
+            </p>
         </div>
     </div>
+  </div>
 </footer>

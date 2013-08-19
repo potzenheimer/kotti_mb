@@ -15,9 +15,56 @@
     padding: 0 @line-height-computed @line-height-computed 0;
 }
 
+.app-editbar {
+    margin-bottom: 0;
+    .navbar-nav {
+        > li > a {
+          color: @navbar-default-link-color;
+        }
+    }
+}
+
 .navbar-app,
 .app-navbar {
     margin-bottom: 0;
+    background: @brand-primary;
+    border-color: @brand-primary;
+    border-radius: 0;
+    .navbar-nav {
+        > li > a {
+          text-transform: uppercase;
+          color: #fff;
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-hover-color;
+            background-color: @navbar-default-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @app-color-secondary;
+            background-color: @navbar-default-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @app-color-secondary;
+            background-color: @navbar-default-link-disabled-bg;
+          }
+        }
+    }
+}
+
+@media (min-width: @screen-lg-desktop) {
+  .navbar-brand {
+    .size(235px, @navbar-height);
+    text-indent: -3333px;
+    background:url(../assets/img/freie-waehler-logo.png) no-repeat  0 50% transparent;
+  }
 }
 
 
@@ -26,9 +73,19 @@
     margin-top: @navbar-height;
 }
 
+.app-hero {
+    padding-right: 0;
+}
+
 .app-hero-brand {
-    padding: @line-height-computed;
     border: 1px solid @gray;
+    a {
+        .size(590px, 220px);
+        display: block;
+        text-indent: -9000px;
+        overflow: hidden;
+        background: url(../assets/img/dr-markus-brem.png) no-repeat 0 0 transparent;
+    }
 }
 
 
@@ -37,4 +94,9 @@
     margin-top: @line-height-computed;
     padding: @line-height-computed 0;
     border-top: 1px solid @gray-lighter;
+    background: @brand-primary;
+    color: #fff;
+    .app-footer-link {
+        color: @text-color;
+    }
 }

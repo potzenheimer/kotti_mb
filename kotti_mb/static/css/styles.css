@@ -8713,7 +8713,7 @@ textarea.controls > input {
 .navbar-app .navbar-nav > .active > a:focus,
 .app-navbar .navbar-nav > .active > a:focus {
   color: #f6a800;
-  background-color: #e7e7e7;
+  background-color: transparent;
 }
 .navbar-app .navbar-nav > .disabled > a,
 .app-navbar .navbar-nav > .disabled > a,
@@ -8738,9 +8738,6 @@ textarea.controls > input {
 }
 .app-hero {
   padding-right: 0;
-}
-.app-hero-brand {
-  border: 1px solid #555555;
 }
 .app-hero-brand a {
   width: 590px;

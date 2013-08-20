@@ -10,7 +10,7 @@
         </div>
         <div class="col-xs-12 col-lg-6">
             <p class="app-footer-sm text-right">
-                <a class="app-footer-link"><i class="icon-facebook-sign icon-2x"></i></a>
+                <a class="app-footer-link" href="https://www.facebook.com/DrMarkusBrem"><i class="icon-facebook-sign icon-2x"></i></a>
             </p>
         </div>
     </div>

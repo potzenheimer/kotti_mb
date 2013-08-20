@@ -22,5 +22,5 @@ class LandingPage(Document):
     )
 
     # adjust the __init__ method according to your columns
-    def __init__(self, example_text=u'', **kwargs):
+    def __init__(self, **kwargs):
         super(LandingPage, self).__init__(**kwargs)

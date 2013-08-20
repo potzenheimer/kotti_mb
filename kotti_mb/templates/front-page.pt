@@ -11,10 +11,9 @@
       ${api.context.description}
     </p>
 
-    <p class="lead">
-      This is our custom front page added via includeme into the kotti view
-      configuration
-    </p>
+    <div class="fp-content">
+        ${structure: api.context.body}
+    </div>
 
     <div tal:condition="items" class="blogentries">
       <div tal:repeat="item items" class="blogentry" data-uri="${api.url(item)}">

@@ -30,7 +30,6 @@ class LandingPageEditForm(EditFormView):
 def view_content_type(context, request):
     return {
         'api': template_api(context, request),  # this bounds context and request variables to the api in the template
-        'example_text': context.example_text,  # this can be called directly in the template as example_text
     }
 
 

@@ -8740,12 +8740,11 @@ textarea.controls > input {
   padding-right: 0;
 }
 .app-hero-brand a {
-  width: 590px;
-  height: 220px;
-  display: block;
-  text-indent: -9000px;
-  overflow: hidden;
-  background: url(../assets/img/dr-markus-brem.png) no-repeat 0 0 transparent;
+  font-size: 24px;
+}
+.panel-title-deco {
+  font-size: 32px;
+  background: url(../assets/img/sun-icon.png) no-repeat 0 0 transparent;
 }
 .app-footer {
   margin-top: 22px;

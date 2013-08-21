@@ -8698,6 +8698,10 @@ textarea.controls > input {
 .app-editbar .navbar-nav > li > a {
   color: #777777;
 }
+.app-navbar-wrapper {
+  padding-right: 0;
+  padding-left: 0;
+}
 .navbar-app,
 .app-navbar {
   margin-bottom: 0;
@@ -8748,10 +8752,40 @@ textarea.controls > input {
   margin-top: 50px;
 }
 .app-hero {
-  padding-right: 0;
+  padding: 0;
+  background: transparent;
 }
-.app-hero-brand a {
+.app-hero-content {
+  padding: 50px 0 50px;
+  background: transparent;
+}
+.app-hero-brand .app-hero-brandname {
+  display: block;
   font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+.app-hero-brand .app-hero-brandname small {
+  display: block;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  .app-hero-brandname {
+    float: right !important;
+    float: right;
+    width: 590px;
+    height: 220px;
+    text-indent: -9000px;
+    overflow: hidden;
+    background: url(../assets/img/claim.png) no-repeat 0 0 transparent;
+  }
+}
+@media (min-width: 1200px) {
+  .app-hero-content {
+    padding: 50px 0 275px;
+    background: url(../assets/img/header.png) no-repeat 0 0 transparent;
+  }
 }
 .panel-title-deco {
   font-size: 32px;

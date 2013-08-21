@@ -28,6 +28,11 @@
     }
 }
 
+.app-navbar-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .navbar-app,
 .app-navbar {
     margin-bottom: 0;
@@ -77,22 +82,50 @@
     margin-top: @navbar-height;
 }
 
+// Hero content
+
 .app-hero {
-    padding-right: 0;
-    background:url(../assets/img/header.png) no-repeat 0 0 transparent;
+    padding: 0;
+    background: transparent;
+}
+
+.app-hero-content {
+    padding: @navbar-height 0 @navbar-height;
+    background:transparent;
 }
 
 .app-hero-brand {
     //border: 1px solid @gray;
-    a {
+    .app-hero-brandname {
+        display: block;
         font-size: @font-size-base * 1.5;
-        //.size(590px, 220px);
-        //display: block;
-        //text-indent: -9000px;
-        //overflow: hidden;
-        //background: url(../assets/img/dr-markus-brem.png) no-repeat 0 0 transparent;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: @line-height-computed;
+        small {
+            display: block;
+            font-weight: 300;
+        }
     }
 }
+
+@media (min-width: @screen-tablet) {
+    .app-hero-brandname {
+        .pull-right();
+        .size(590px, 220px);
+        text-indent: -9000px;
+        overflow: hidden;
+        background: url(../assets/img/claim.png) no-repeat 0 0 transparent;
+    }
+}
+
+@media (min-width: @screen-lg-desktop) {
+    .app-hero-content {
+        padding: @navbar-height 0 @navbar-height * 5.5;
+        background:url(../assets/img/header.png) no-repeat 0 0 transparent;
+    }
+}
+
 
 .panel-title-deco {
     font-size: @font-size-base * 2;

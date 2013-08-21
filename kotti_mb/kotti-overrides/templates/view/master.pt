@@ -30,15 +30,17 @@
     <nav tal:replace="api.render_template('kotti:templates/view/nav.pt')" />
 
     <div class="jumbotron app-hero">
-        <div class="container">
-          <div class="app-hero-brand pull-right">
-              <a href="/">Logo / Brand <small>Brand Claim</small></a>
-          </div>
+      <div class="container app-hero-content">
+        <div class="app-hero-brand text-center">
+            <a class="app-hero-brandname" href="${request.application_url}">Dr. Markus Brem
+                <small>Vision braucht Kompetenz</small></a>
         </div>
+      </div>
     </div>
 
     <div class="container">
-      <div tal:replace="api.render_template('kotti:templates/edit/breadcrumbs.pt')" />
+      <div tal:condition="request.user is not None"
+            tal:replace="api.render_template('kotti:templates/edit/breadcrumbs.pt')" />
 
       <div class="row">
         <div class="span3 left-column"

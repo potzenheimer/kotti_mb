@@ -8630,6 +8630,17 @@ ul.visualNoMarker {
 .blogentry-content {
   padding: 11px;
 }
+.alert {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #3a87ad;
+}
+.alert hr {
+  border-top-color: #a6e1ec;
+}
+.alert .alert-link {
+  color: #2d6987;
+}
 .control-group {
   margin-bottom: 15px;
 }

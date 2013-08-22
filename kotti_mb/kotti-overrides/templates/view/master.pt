@@ -12,6 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="${context.description | ''}" />
 
+    <link rel="shortcut icon" href="../static/assets/ico/favicon.png">
+    <link rel="shortcut icon" href="../static/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../static/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../static/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../static/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../static/assets/ico/apple-touch-icon-57-precomposed.png">
+
     <more tal:omit-tag="" metal:define-slot="head-more"></more>
 
     <!-- 'inhead' slots: support third party injection of things that

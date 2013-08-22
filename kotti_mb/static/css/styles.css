@@ -2164,8 +2164,8 @@ input[type="button"].btn-block {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../lib/font-awesome/font/FontAwesome.eot');
-  src: url('../lib/font-awesome/font/FontAwesome.eot?#iefix') format('embedded-opentype'), url('../lib/font-awesome/font/FontAwesome.woff') format('woff'), url('../lib/font-awesome/font/FontAwesome.ttf') format('truetype'), url('../lib/font-awesome/font/FontAwesome.svg#glyphicons-halflingsregular') format('svg');
+  src: url('../lib/font-awesome/fontFontAwesome.eot');
+  src: url('../lib/font-awesome/fontFontAwesome.eot?#iefix') format('embedded-opentype'), url('../lib/font-awesome/fontFontAwesome.woff') format('woff'), url('../lib/font-awesome/fontFontAwesome.ttf') format('truetype'), url('../lib/font-awesome/fontFontAwesome.svg#glyphicons-halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -5941,8 +5941,8 @@ td.visible-print {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../lib/font-awesome/font//fontawesome-webfont.eot?v=3.2.1');
-  src: url('../lib/font-awesome/font//fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../lib/font-awesome/font//fontawesome-webfont.woff?v=3.2.1') format('woff'), url('../lib/font-awesome/font//fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('../lib/font-awesome/font//fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+  src: url('../lib/font-awesome/font/fontawesome-webfont.eot?v=3.2.1');
+  src: url('../lib/font-awesome/font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../lib/font-awesome/font/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('../lib/font-awesome/font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('../lib/font-awesome/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
   font-weight: normal;
   font-style: normal;
 }

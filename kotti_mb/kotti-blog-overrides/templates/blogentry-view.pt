@@ -8,16 +8,40 @@
   <article metal:fill-slot="content" class="blogentry-view content blogentries">
 
     <div class="blogentry" data-uri="${api.url(context)}">
-        <div class="page-header">
-            <span class="text-muted date" tal:content="api.format_date(context.date)" />
-            <h1>${api.context.title}</h1>
+        <div class="row">
+            <div class="col-xs-12 col-lg-9">
+                <div class="page-header">
+                    <h1>${api.context.title}</h1>
+                </div>
+                <p class="lead description">
+                    ${api.context.description}
+                </p>
+                 <p class="body">
+                    ${structure: api.context.body}
+                </p>
+            </div>
+            <div class="col-xs-12 col-lg-3">
+                <aside class="blogentry-aside">
+                    <h4 class="text-muted date">
+                        Ver&ouml;ffentlicht am 
+                        <span tal:content="api.format_date(context.date)">20.08.2013</span>
+                    </h4>
+                    <hr>
+                    <div tal:define="tags python:api.context.tags">
+                        <div class="blogentry-tags" tal:condition="tags">
+                            <h5>Abgelegt unter</h5>
+                            <i class="icon-tags"></i>
+                            <tal:block tal:repeat="tag tags">
+                                <span class="label">Energie</span>
+                                <span class="label">Kultur</span>
+                            </tal:block>
+                            <hr>
+                        </div>
+                    </div>
+                    <a href="${request.application_url}/blog">Alle Artikel anzeigen</a>
+                </aside>
+            </div>
         </div>
-        <p class="lead description">
-            ${api.context.description}
-        </p>
-         <p class="body">
-            ${structure: api.context.body}
-        </p>
     </div>
 
   </article>

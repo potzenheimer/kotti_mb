@@ -8631,6 +8631,16 @@ ul.visualNoMarker {
 .blogentry-content {
   padding: 11px;
 }
+.blogentry-aside {
+  padding-top: 50px;
+}
+.blogentry-aside .label {
+  background-color: #f6a800;
+}
+.blogentry-aside .label[href]:hover,
+.blogentry-aside .label[href]:focus {
+  background-color: #c38500;
+}
 .alert {
   background-color: #d9edf7;
   border-color: #bce8f1;

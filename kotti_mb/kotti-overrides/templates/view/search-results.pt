@@ -10,6 +10,14 @@
 
     <dl id="search-results">
       <tal:repeat tal:repeat="result results">
+        <div class="blogentry-header">
+            <span class="date" tal:content="api.format_date(item.date)" />
+            <h2>
+              <a href="${api.url(item)}" title="${item.description}">
+                ${item.title}
+              </a>
+            </h2>
+        </div>
         <h4 class="search-result">
           <a href="${request.application_url}${result.path}">${result.title}</a>
         </h4>

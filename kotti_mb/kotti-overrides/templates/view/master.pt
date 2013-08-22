@@ -11,12 +11,12 @@
     <title metal:define-slot="page-title">${api.page_title | api.site_title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="${context.description | ''}" />
-    <link rel="shortcut icon" href="${request.application_url}/assets/ico/favicon.png">
-    <!--<link rel="shortcut icon" href="${request.application_url}/assets/ico/favicon.ico">-->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="${request.application_url}/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="${request.application_url}/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="${request.application_url}/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="${request.application_url}/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="${request.static_url('kotti_mb:static/assets/ico/favicon.png')}">
+    <link rel="shortcut icon" href="${request.static_url('kotti_mb:static/assets/ico/favicon.ico')}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="${request.static_url('kotti_mb:static/assets/ico/apple-touch-icon-144-precomposed.png')}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="${request.static_url('kotti_mb:static/assets/ico/apple-touch-icon-114-precomposed.png')}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="${request.static_url('kotti_mb:static/assets/ico/apple-touch-icon-72-precomposed.png')}">
+    <link rel="apple-touch-icon-precomposed" href="${request.static_url('kotti_mb:static/assets/ico/apple-touch-icon-57-precomposed.png')}">
     <more tal:omit-tag="" metal:define-slot="head-more"></more>
 
     <!-- 'inhead' slots: support third party injection of things that

@@ -8785,7 +8785,7 @@ textarea.controls > input {
 @media (min-width: 1200px) {
   .app-hero-content {
     padding: 50px 0 275px;
-    background: url(../assets/img/header.png) no-repeat 0 0 transparent;
+    background: url(../assets/img/hero-bg.jpg) no-repeat 0 0 transparent;
   }
 }
 .panel-title-deco {

@@ -8792,6 +8792,8 @@ textarea.controls > input {
   background: url(../assets/img/sun-icon.png) no-repeat 0 0 transparent;
 }
 .pagination {
+  border-radius: 0;
+  display: block;
   border-top: 1px solid #eeeeee;
 }
 .pagination ul {

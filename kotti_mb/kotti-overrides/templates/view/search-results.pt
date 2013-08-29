@@ -17,10 +17,13 @@
               </a>
             </h2>
         </div>
-        <h4 class="search-result">
-          <a href="${request.application_url}${result.path}">${result.title}</a>
-        </h4>
-        <p><span tal:replace="result.description" /></p>
+        <div class="search-result">
+            <p class="text-muted">${result.description}
+                <a href="${request.application_url}${result.path}" title="${result.title}">
+                  Beitrag lesen&hellip;
+                </a>
+            </p>
+        </div>
       </tal:repeat>
     </dl>
 

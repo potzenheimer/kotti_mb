@@ -8832,8 +8832,8 @@ textarea.controls > input {
 }
 @media (min-width: 768px) {
   .app-hero-brandname {
-    float: right !important;
-    float: right;
+    float: left !important;
+    float: left;
     width: 590px;
     height: 220px;
     text-indent: -9000px;
@@ -8843,8 +8843,8 @@ textarea.controls > input {
 }
 @media (min-width: 1200px) {
   .app-hero-content {
-    padding: 50px 0 275px;
-    background: url(../assets/img/hero-bg.jpg) no-repeat 0 0 transparent;
+    padding: 50px 0 175px;
+    background: url(../assets/img/hero-bg-small.jpg) no-repeat 0 0 transparent;
   }
 }
 .panel-title-deco {

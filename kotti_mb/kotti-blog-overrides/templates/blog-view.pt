@@ -26,7 +26,33 @@
             </h2>
         </div>
         <div class="blogentry-content">
-            <p>${structure: item.body}</p>
+            <div class="row">
+                <div class="col-xs-12 col-lg-9">
+                    <p class="lead">${item.description}</p>
+                    ${structure: item.body}
+                </div>
+                <div class="col-xs-12 col-lg-3">
+                    <aside class="blogentry-content-aside">
+                        <h4 class="text-muted date">
+                            Ver&ouml;ffentlicht am 
+                            <span tal:content="api.format_date(item.date)">20.08.2013</span>
+                        </h4>
+                        <hr>
+                        <div tal:define="tags python:item.tags">
+                            <div class="blogentry-tags" tal:condition="tags">
+                                <h5>Abgelegt unter</h5>
+                                <i class="icon-tags"></i>
+                                <tal:block tal:repeat="tag tags">
+                                    <a href="${request.application_url}/search-tag?tag=${tag}">
+                                        <span class="label label-blogentry" tal:content="tag">Energie</span>
+                                    </a>
+                                </tal:block>
+                                <hr>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
         </div>
       </div>
     </div>

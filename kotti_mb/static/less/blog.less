@@ -8,7 +8,11 @@
 }
 
 .blogentry {
+    .clearfix();
     margin-bottom: @line-height-computed;
+    img {
+        .thumbnail();
+    }
 }
 
 .blogentry-header {
@@ -29,4 +33,7 @@
     .label {
         .label-variant(@app-color-secondary);
     }
+}
+.label-blogentry {
+    .label-variant(@app-color-secondary);
 }
